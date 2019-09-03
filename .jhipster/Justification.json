@@ -1,0 +1,27 @@
+{
+    "name": "Justification",
+    "fields": [
+        {
+            "fieldName": "justificationDescription",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "occurrence",
+            "otherEntityName": "occurrence",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190903141416",
+    "entityTableName": "justification",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "tpa",
+    "applications": "*",
+    "microserviceName": "tpa"
+}

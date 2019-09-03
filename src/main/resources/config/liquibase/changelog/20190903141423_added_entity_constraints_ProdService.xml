@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity ProdService.
+    -->
+    <changeSet id="20190903141423-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="journey_id"
+                                 baseTableName="prod_service"
+                                 constraintName="fk_prod_service_journey_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="journey"/>
+
+        <addForeignKeyConstraint baseColumnNames="occurrence_id"
+                                 baseTableName="prod_service"
+                                 constraintName="fk_prod_service_occurrence_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="occurrence"/>
+
+    </changeSet>
+</databaseChangeLog>

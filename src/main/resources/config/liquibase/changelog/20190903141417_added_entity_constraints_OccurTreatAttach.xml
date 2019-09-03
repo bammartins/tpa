@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity OccurTreatAttach.
+    -->
+    <changeSet id="20190903141417-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="occurrence_treatment_id"
+                                 baseTableName="occur_treat_attach"
+                                 constraintName="fk_occur_treat_attach_occurrence_treatment_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="occurrence_treatment"/>
+
+        <addForeignKeyConstraint baseColumnNames="attachment_id"
+                                 baseTableName="occur_treat_attach"
+                                 constraintName="fk_occur_treat_attach_attachment_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="attachment"/>
+
+    </changeSet>
+</databaseChangeLog>

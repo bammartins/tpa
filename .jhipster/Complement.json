@@ -1,0 +1,35 @@
+{
+    "name": "Complement",
+    "fields": [
+        {
+            "fieldName": "complementDescription",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "employeeId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "employeeName",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "occurrence",
+            "otherEntityRelationshipName": "complement",
+            "relationshipName": "occurrence"
+        }
+    ],
+    "changelogDate": "20190903141421",
+    "entityTableName": "complement",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "tpa",
+    "applications": "*",
+    "microserviceName": "tpa"
+}

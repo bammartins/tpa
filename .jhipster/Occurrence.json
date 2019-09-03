@@ -1,0 +1,101 @@
+{
+    "name": "Occurrence",
+    "fields": [
+        {
+            "fieldName": "occurrenceCodeNbr",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "cpf",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "customerId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "employeeId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "employeeName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "media",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "finalComment",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "entryWay",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "agility",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "prediction",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "resolve",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "justification",
+            "otherEntityRelationshipName": "occurrence",
+            "relationshipName": "justification"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "attachment",
+            "otherEntityRelationshipName": "occurrence",
+            "relationshipName": "attachment"
+        },
+        {
+            "relationshipName": "occurrenceTi",
+            "otherEntityName": "occurrenceTi",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "occurrenceTreatment",
+            "otherEntityName": "occurrenceTreatment",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "situation",
+            "otherEntityName": "situation",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "complement",
+            "otherEntityName": "complement",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190903141412",
+    "entityTableName": "occurrence",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "tpa",
+    "applications": "*",
+    "microserviceName": "tpa"
+}

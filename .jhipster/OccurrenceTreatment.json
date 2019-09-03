@@ -1,0 +1,61 @@
+{
+    "name": "OccurrenceTreatment",
+    "fields": [
+        {
+            "fieldName": "occurrenceDescription",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "employeeId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "employeeName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "contactType",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "contactStatus",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "occurrence",
+            "otherEntityRelationshipName": "occurrenceTreatment",
+            "relationshipName": "occurrence"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "contact",
+            "otherEntityRelationshipName": "occurrenceTreatment",
+            "relationshipName": "contact"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "occurTreatAttach",
+            "otherEntityRelationshipName": "occurrenceTreatment",
+            "relationshipName": "occurTreatAttach"
+        },
+        {
+            "relationshipName": "situation",
+            "otherEntityName": "situation",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190903141415",
+    "entityTableName": "occurrence_treatment",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "tpa",
+    "applications": "*",
+    "microserviceName": "tpa"
+}

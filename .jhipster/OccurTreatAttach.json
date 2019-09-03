@@ -1,0 +1,29 @@
+{
+    "name": "OccurTreatAttach",
+    "fields": [],
+    "relationships": [
+        {
+            "relationshipName": "occurrenceTreatment",
+            "otherEntityName": "occurrenceTreatment",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "attachment",
+            "otherEntityRelationshipName": "occurTreatAttach",
+            "relationshipName": "attachment",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190903141417",
+    "entityTableName": "occur_treat_attach",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "tpa",
+    "applications": "*",
+    "microserviceName": "tpa"
+}

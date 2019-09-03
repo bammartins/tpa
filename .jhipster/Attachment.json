@@ -1,0 +1,41 @@
+{
+    "name": "Attachment",
+    "fields": [
+        {
+            "fieldName": "attachmentName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "gccId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "gccName",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "occurrence",
+            "otherEntityName": "occurrence",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "complementAttachment",
+            "otherEntityRelationshipName": "attachment",
+            "relationshipName": "complementAttachment"
+        }
+    ],
+    "changelogDate": "20190903141420",
+    "entityTableName": "attachment",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "tpa",
+    "applications": "*",
+    "microserviceName": "tpa"
+}

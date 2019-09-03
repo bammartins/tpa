@@ -1,0 +1,46 @@
+{
+    "name": "ProdService",
+    "fields": [
+        {
+            "fieldName": "prodServiceDescription",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "journey",
+            "otherEntityName": "journey",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "journeyProductSubject",
+            "otherEntityRelationshipName": "prodService",
+            "relationshipName": "journeyProductSubject"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "subject",
+            "otherEntityRelationshipName": "prodService",
+            "relationshipName": "subject"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "occurrence",
+            "otherEntityRelationshipName": "prodService",
+            "relationshipName": "occurrence",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190903141423",
+    "entityTableName": "prod_service",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "tpa",
+    "applications": "*",
+    "microserviceName": "tpa"
+}

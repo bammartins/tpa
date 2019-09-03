@@ -1,0 +1,35 @@
+{
+    "name": "Contact",
+    "fields": [
+        {
+            "fieldName": "contactStatus",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "contactType",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "contactDescription",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "occurrenceTreatment",
+            "otherEntityName": "occurrenceTreatment",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190903141419",
+    "entityTableName": "contact",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "tpa",
+    "applications": "*",
+    "microserviceName": "tpa"
+}

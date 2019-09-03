@@ -1,0 +1,50 @@
+{
+    "name": "JourneyProductSubject",
+    "fields": [
+        {
+            "fieldName": "sla",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "slaType",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "prodService",
+            "otherEntityName": "prodService",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "subject",
+            "otherEntityName": "subject",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "journey",
+            "otherEntityRelationshipName": "journeyProductSubject",
+            "relationshipName": "journey"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "priority",
+            "otherEntityRelationshipName": "journeyProductSubject",
+            "relationshipName": "priority",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190903141425",
+    "entityTableName": "journey_product_subject",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "tpa",
+    "applications": "*",
+    "microserviceName": "tpa"
+}
