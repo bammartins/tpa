@@ -1,0 +1,27 @@
+{
+    "name": "Priority",
+    "fields": [
+        {
+            "fieldName": "priorityDescription",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "occurrenceTi",
+            "otherEntityRelationshipName": "priority",
+            "relationshipName": "occurrenceTi"
+        }
+    ],
+    "changelogDate": "20190903141414",
+    "entityTableName": "priority",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "tpa",
+    "applications": "*",
+    "microserviceName": "tpa"
+}

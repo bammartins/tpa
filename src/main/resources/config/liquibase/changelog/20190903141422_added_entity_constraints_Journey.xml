@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity Journey.
+    -->
+    <changeSet id="20190903141422-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="occurrence_id"
+                                 baseTableName="journey"
+                                 constraintName="fk_journey_occurrence_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="occurrence"/>
+
+        <addForeignKeyConstraint baseColumnNames="journey_product_subject_id"
+                                 baseTableName="journey"
+                                 constraintName="fk_journey_journey_product_subject_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="journey_product_subject"/>
+
+    </changeSet>
+</databaseChangeLog>

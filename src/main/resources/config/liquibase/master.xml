@@ -14,6 +14,33 @@
     <property name="uuidType" value="varchar(36)" dbms="h2, mysql, mariadb"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190903141412_added_entity_Occurrence.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190903141413_added_entity_OccurrenceTi.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190903141414_added_entity_Priority.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190903141415_added_entity_OccurrenceTreatment.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190903141416_added_entity_Justification.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190903141417_added_entity_OccurTreatAttach.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190903141418_added_entity_Situation.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190903141419_added_entity_Contact.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190903141420_added_entity_Attachment.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190903141421_added_entity_Complement.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190903141422_added_entity_Journey.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190903141423_added_entity_ProdService.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190903141424_added_entity_Subject.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190903141425_added_entity_JourneyProductSubject.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190903141426_added_entity_ComplementAttachment.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20190903141412_added_entity_constraints_Occurrence.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190903141413_added_entity_constraints_OccurrenceTi.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190903141415_added_entity_constraints_OccurrenceTreatment.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190903141416_added_entity_constraints_Justification.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190903141417_added_entity_constraints_OccurTreatAttach.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190903141419_added_entity_constraints_Contact.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190903141420_added_entity_constraints_Attachment.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190903141422_added_entity_constraints_Journey.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190903141423_added_entity_constraints_ProdService.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190903141424_added_entity_constraints_Subject.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190903141425_added_entity_constraints_JourneyProductSubject.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190903141426_added_entity_constraints_ComplementAttachment.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>

@@ -1,0 +1,37 @@
+{
+    "name": "Situation",
+    "fields": [
+        {
+            "fieldName": "situationDescription",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "statusCode",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "occurrence",
+            "otherEntityRelationshipName": "situation",
+            "relationshipName": "occurrence"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "occurrenceTreatment",
+            "otherEntityRelationshipName": "situation",
+            "relationshipName": "occurenceTreatment"
+        }
+    ],
+    "changelogDate": "20190903141418",
+    "entityTableName": "situation",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "tpa",
+    "applications": "*",
+    "microserviceName": "tpa"
+}

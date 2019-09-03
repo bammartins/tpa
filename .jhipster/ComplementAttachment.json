@@ -1,0 +1,29 @@
+{
+    "name": "ComplementAttachment",
+    "fields": [],
+    "relationships": [
+        {
+            "relationshipName": "attachment",
+            "otherEntityName": "attachment",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "complement",
+            "otherEntityRelationshipName": "complementAttachment",
+            "relationshipName": "complement",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190903141426",
+    "entityTableName": "complement_attachment",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "tpa",
+    "applications": "*",
+    "microserviceName": "tpa"
+}

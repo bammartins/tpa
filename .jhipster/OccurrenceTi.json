@@ -1,0 +1,65 @@
+{
+    "name": "OccurrenceTi",
+    "fields": [
+        {
+            "fieldName": "osVersion",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "appVersion",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "phoneModel",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sla",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "slaType",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "errorTime",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "priorityCode",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "statusCode",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "occurrenceTiDescription",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "occurrence",
+            "otherEntityRelationshipName": "occurrenceTi",
+            "relationshipName": "occurrence"
+        },
+        {
+            "relationshipName": "priority",
+            "otherEntityName": "priority",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190903141413",
+    "entityTableName": "occurrence_ti",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "tpa",
+    "applications": "*",
+    "microserviceName": "tpa"
+}
