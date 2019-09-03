@@ -1,0 +1,20 @@
+{
+    "name": "Priority",
+    "fields": [
+        {
+            "fieldName": "priorityDescription",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20190903124822",
+    "entityTableName": "priority",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "tpa",
+    "applications": "*",
+    "microserviceName": "tpa"
+}

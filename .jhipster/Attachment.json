@@ -1,0 +1,28 @@
+{
+    "name": "Attachment",
+    "fields": [
+        {
+            "fieldName": "attachmentName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "gccId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "gccName",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20190903124827",
+    "entityTableName": "attachment",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "tpa",
+    "applications": "*",
+    "microserviceName": "tpa"
+}

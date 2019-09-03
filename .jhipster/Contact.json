@@ -1,0 +1,28 @@
+{
+    "name": "Contact",
+    "fields": [
+        {
+            "fieldName": "contactStatus",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "contactType",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "contactDescription",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20190903124826",
+    "entityTableName": "contact",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "tpa",
+    "applications": "*",
+    "microserviceName": "tpa"
+}

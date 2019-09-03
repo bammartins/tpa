@@ -1,0 +1,24 @@
+{
+    "name": "Situation",
+    "fields": [
+        {
+            "fieldName": "situationDescription",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "statusCode",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20190903124825",
+    "entityTableName": "situation",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "tpa",
+    "applications": "*",
+    "microserviceName": "tpa"
+}

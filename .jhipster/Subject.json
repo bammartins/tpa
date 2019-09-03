@@ -1,0 +1,20 @@
+{
+    "name": "Subject",
+    "fields": [
+        {
+            "fieldName": "subjectDescription",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20190903124831",
+    "entityTableName": "subject",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "tpa",
+    "applications": "*",
+    "microserviceName": "tpa"
+}
