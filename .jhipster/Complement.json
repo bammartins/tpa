@@ -1,0 +1,28 @@
+{
+    "name": "Complement",
+    "fields": [
+        {
+            "fieldName": "complementDescription",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "employeeId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "employeeName",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20190903124828",
+    "entityTableName": "complement",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "tpa",
+    "applications": "*",
+    "microserviceName": "tpa"
+}

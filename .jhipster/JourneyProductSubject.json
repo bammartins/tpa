@@ -1,0 +1,24 @@
+{
+    "name": "JourneyProductSubject",
+    "fields": [
+        {
+            "fieldName": "sla",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "slaType",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20190903124832",
+    "entityTableName": "journey_product_subject",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "tpa",
+    "applications": "*",
+    "microserviceName": "tpa"
+}
