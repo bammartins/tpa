@@ -1,0 +1,156 @@
+
+entity Occurrence {
+	occurrenceCodeNbr Integer,
+    cpf Integer,
+    customerId Integer,
+    employeeId Integer,
+    employeeName String,
+    media Integer,
+    type Integer,
+    finalComment String,
+    entryWay String,
+    agility Boolean,
+    prediction Instant,
+    resolve Instant,
+}
+
+entity OccurrenceTi {
+	osVersion String,
+    appVersion String,
+    phoneModel String,
+    sla Integer, 
+    slaType Integer,
+    errorTime Instant,
+    priorityCode Integer,
+    statusCode Integer,
+    occurrenceTiDescription String
+}
+
+entity Priority {
+	priorityDescription String
+}
+
+entity OccurrenceTreatment {
+	occurrenceDescription String,
+    employeeId Integer,
+    employeeName String,
+    contactType Integer,
+    contactStatus Integer
+}
+	
+entity Justification {
+	justificationDescription String
+}
+entity OccurTreatAttach{
+
+}
+entity Situation {
+	situationDescription String,
+    statusCode Integer
+}
+
+entity Contact {
+	contactStatus String,
+    contactType Integer,
+    contactDescription String
+}
+
+entity Attachment {
+	attachmentName String,
+    gccId Integer,
+    gccName String
+}
+
+entity Complement {
+	complementDescription String,
+    employeeId Integer,
+    employeeName String,
+}
+
+entity Journey {
+	journeyDescription String,
+    active Boolean,
+}
+
+entity ProdService {
+	prodServiceDescription String
+}
+
+entity Subject {
+	subjectDescription String
+}
+
+entity JourneyProductSubject {
+	sla Integer,
+    slaType Integer
+}
+entity ComplementAttachment{
+
+}
+relationship OneToMany {
+ 	Occurrence{justification} to Justification
+    
+}
+relationship OneToMany{
+	Situation{occurrence} to Occurrence
+}
+relationship OneToMany{
+	Complement{occurrence} to Occurrence
+} 
+relationship OneToMany{
+	Occurrence {attachment} to Attachment
+}
+relationship OneToMany{
+	OccurrenceTreatment{occurrence} to Occurrence
+}
+relationship ManyToOne{
+	ProdService {occurrence} to Occurrence 
+}
+relationship ManyToOne{
+	Journey {occurrence} to Occurrence
+}
+relationship OneToMany{
+	JourneyProductSubject{journey} to Journey
+}
+relationship OneToMany{
+	Journey{prodService} to ProdService
+}
+relationship OneToMany{
+	ProdService{journeyProductSubject} to JourneyProductSubject
+}
+relationship OneToMany {
+	ProdService{subject} to Subject
+}
+relationship ManyToOne{
+	Subject{subjectDescription} to Occurrence
+}
+relationship OneToMany{
+	Subject{journeyProductSubject} to JourneyProductSubject
+}
+relationship ManyToOne{
+	JourneyProductSubject{priority} to Priority
+}
+relationship OneToMany{
+	Priority{occurrenceTi} to OccurrenceTi
+}
+relationship OneToMany{
+	OccurrenceTi{occurrence} to Occurrence
+}
+relationship OneToMany{
+	Situation{occurenceTreatment} to OccurrenceTreatment
+}
+relationship OneToMany{
+	OccurrenceTreatment{contact} to Contact
+}
+relationship OneToMany{
+	OccurrenceTreatment {OccurTreatAttach} to OccurTreatAttach 
+}
+relationship ManyToOne{
+	OccurrenceTreatmentAttachment{attachment} to Attachment
+}
+relationship OneToMany{
+	Attachment {complementAttachment} to ComplementAttachment
+}
+relationship ManyToOne{
+	ComplementAttachment{complement} to Complement
+}
