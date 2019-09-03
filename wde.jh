@@ -1,0 +1,85 @@
+
+entity Occurrence {
+	occurrenceCodeNbr: Integer,
+    cpf: Integer,
+    customerId: Integer,
+    employeeId: Integer,
+    employeeName: String,
+    media: Integer,
+    type: Integer,
+    finalComment: String,
+    entryWay: String,
+    agility: Boolean,
+    prediction: Instant,
+    resolve: Instant,
+}
+
+entity OccurrenceTi {
+	osVersion: String,
+    appVersion: String,
+    phoneModel: String,
+    sla: Integer, 
+    slaType: Integer,
+    errorTime: Instant,
+    priorityCode: Integer,
+    statusCode: Integer,
+    occurrenceTiDescription: String
+}
+
+entity Priority {
+	priorityDescription: String
+}
+
+entity OccurrenceTreatment {
+	occurrenceDescription: String,
+    employeeId: Integer,
+    employeeName: String,
+    contactType: Integer,
+    contactStatus: Integer
+}
+	
+entity Justification {
+	justificationDescription: String
+}
+
+entity Situation {
+	situationDescription: String,
+    statusCode: Integer
+}
+
+entity Contact {
+	contactStatus: String,
+    contactType: Integer,
+    contactDescription: String
+}
+
+entity Attachment {
+	attachmentName: String,
+    gccId: Integer,
+    gccName: String
+}
+
+entity Complement {
+	complementDescription: String,
+    employeeId: Integer,
+    employeeName: String,
+}
+
+entity Journey {
+	journeyDescription: String,
+    active: Boolean,
+}
+
+entity ProdService {
+	prodServiceDescription: String
+}
+
+entity Subject {
+	subjectDescription: String
+}
+
+entity JourneyProductSubject {
+	sla: Integer,
+    slaType: Integer
+}
+
